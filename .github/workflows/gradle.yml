@@ -12,8 +12,8 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
 
-            -   name: Run debug build
-                run: ./gradlew assembleDebug
+            -   name: Run release build
+                run: ./gradlew assembleRelease
 
             -   name: Upload artifact to GitHub
                 uses: actions/upload-artifact@v2
